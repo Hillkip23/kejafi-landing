@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KejaFi – Own a Piece of Tomorrow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9f9f5;
+      color: #2e2e2e;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #1a441a;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 80px 40px;
+      text-align: center;
+      background-color: #eaf5ea;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #1a441a;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background-color: #1a441a;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #ffffff;
+      color: #888;
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button.subscribe {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #1a441a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .section h2 {
+        font-size: 1.5rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">KejaFi</div>
+    <nav>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Own a Piece of Tomorrow</h1>
+    <p>KejaFi lets you invest in real estate with as little as $100. Transparent. Tokenized. Truly yours.</p>
+    <button>Join the Waitlist</button>
+  </section>
+
+  <section class="section" id="how-it-works">
+    <h2>How It Works</h2>
+    <p>KejaFi uses blockchain technology to fractionalize real estate assets, allowing you to buy shares of income-generating properties and earn monthly rent payouts – securely, transparently, and easily.</p>
+  </section>
+
+  <section class="section" id="benefits">
+    <h2>Why KejaFi?</h2>
+    <p><strong>✔ Low-Cost Entry</strong> – Start with $100<br>
+       <strong>✔ Passive Income</strong> – Earn from rental yields<br>
+       <strong>✔ Liquid Ownership</strong> – Trade your shares any time<br>
+       <strong>✔ Borderless</strong> – Invest from anywhere in the world</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Stay in the Loop</h2>
+    <p>Drop your email and we'll notify you when we launch.</p>
+    <input type="email" placeholder="Enter your email">
+    <br>
+    <button class="subscribe">Subscribe</button>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 KejaFi. All rights reserved.
+  </footer>
+</body>
+</html>
