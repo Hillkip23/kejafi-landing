@@ -20,30 +20,35 @@
       align-items: center;
       justify-content: space-between;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
     }
     .logo {
       font-size: 1.5rem;
       font-weight: 800;
       color: #1a441a;
     }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
     nav a {
-      margin-left: 20px;
       text-decoration: none;
       color: #2e2e2e;
       font-weight: 600;
     }
     .hero {
-      padding: 80px 40px;
+      padding: 60px 20px;
       text-align: center;
       background-color: #eaf5ea;
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 20px;
       color: #1a441a;
     }
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-bottom: 30px;
     }
     .hero button {
@@ -56,7 +61,7 @@
       cursor: pointer;
     }
     .section {
-      padding: 60px 40px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
       text-align: center;
@@ -87,6 +92,18 @@
       border-radius: 6px;
       cursor: pointer;
     }
+    .grid-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .grid-icons div {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
     @media (max-width: 600px) {
       .hero h1 {
         font-size: 2rem;
@@ -115,6 +132,8 @@
     <nav>
       <a href="#how-it-works">How It Works</a>
       <a href="#benefits">Benefits</a>
+      <a href="#why-now">Why Now</a>
+      <a href="#roadmap">Roadmap</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -122,12 +141,18 @@
   <section class="hero">
     <h1>Own a Piece of Tomorrow</h1>
     <p>KejaFi lets you invest in real estate with as little as $100. Transparent. Tokenized. Truly yours.</p>
-    <button>Join the Waitlist</button>
+    <a href="https://forms.gle/your-form-link" target="_blank"><button>Join the Waitlist</button></a>
   </section>
 
   <section class="section" id="how-it-works">
     <h2>How It Works</h2>
     <p>KejaFi uses blockchain technology to fractionalize real estate assets, allowing you to buy shares of income-generating properties and earn monthly rent payouts – securely, transparently, and easily.</p>
+    <div class="grid-icons">
+      <div><strong>🏠 Buy Shares</strong><br>Invest in fractional properties</div>
+      <div><strong>💸 Earn Rent</strong><br>Get monthly payouts in stablecoins</div>
+      <div><strong>🔄 Trade Tokens</strong><br>Sell your shares anytime</div>
+      <div><strong>🌍 Borderless</strong><br>Invest from anywhere</div>
+    </div>
   </section>
 
   <section class="section" id="benefits">
@@ -136,6 +161,21 @@
        <strong>✔ Passive Income</strong> – Earn from rental yields<br>
        <strong>✔ Liquid Ownership</strong> – Trade your shares any time<br>
        <strong>✔ Borderless</strong> – Invest from anywhere in the world</p>
+  </section>
+
+  <section class="section" id="why-now">
+    <h2>Why Now?</h2>
+    <p>The intersection of blockchain, real estate, and mobile payments opens new paths for wealth-building. Rising interest in fractional investing and stablecoin adoption means the time for a product like KejaFi is now.</p>
+  </section>
+
+  <section class="section" id="roadmap">
+    <h2>Roadmap</h2>
+    <p>
+      <strong>Q2 2025:</strong> MVP launch, waitlist signup<br>
+      <strong>Q3 2025:</strong> Tokenomics whitepaper + smart contract testing<br>
+      <strong>Q4 2025:</strong> Pilot property listing in Kenya and Canada<br>
+      <strong>Q1 2026:</strong> Rental payout automation, DAO planning<br>
+    </p>
   </section>
 
   <section class="section" id="contact">
